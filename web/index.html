@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Przelicznik</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div style="margin-left: auto; width: 50%; margin-right: auto">
+    <h1>Przelicznik metryczny</h1>
+    <form method="post" action="lengthConversion">
+        <div class="form-group">
+            <label for="lengthConverter">Wpisz wartość, którą chcesz przeliczyć</label>
+            <input type="text" class="form-control" id="lengthConverter" name="lengthConverter"
+                   placeholder="Wpisz wartość, np. 1.4">
+        </div>
+        <div class="form-group">
+            <label for="lengthUnitChoice">Wybierz jednostkę wartości</label>
+            <select class="form-control" id="lengthUnitChoice" name="lengthUnitChoice">
+                <option>metry</option>
+                <option>centymetry</option>
+                <option>milimetry</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Przelicz</button>
+    </form>
+    <br/>
+    <h1>Przelicznik wag</h1>
+    <form method="post" action="weightConversion">
+        <div class="form-group">
+            <label for="weightConverter">Wpisz wartość, którą chcesz przeliczyć</label>
+            <input type="text" class="form-control" id="weightConverter" name="weightConverter"
+                   placeholder="Wpisz wartość, np. 1.4">
+        </div>
+        <div class="form-group">
+            <label for="weightUnitChoice">Wybierz jednostkę wartości</label>
+            <select class="form-control" id="weightUnitChoice" name="weightUnitChoice">
+                <option>kilogramy</option>
+                <option>gramy</option>
+                <option>miligramy</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Przelicz</button>
+    </form>
+</div>
+</body>
+</html>
